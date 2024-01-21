@@ -1,13 +1,10 @@
-import keras
-from keras.layers import Dense, Conv2D, BatchNormalization, Activation, MaxPooling2D, Flatten, Input
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler, ReduceLROnPlateau
-from keras.regularizers import l2
-from keras.models import Model
 import numpy as np
 import os
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.models import load_model
+from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Input
+from keras.callbacks import ModelCheckpoint, LearningRateScheduler, ReduceLROnPlateau
+from keras.models import Model
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import load_model
 from keras.callbacks import EarlyStopping
 
 # Input layer

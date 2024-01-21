@@ -1,14 +1,12 @@
 import tensorflow as tf
-import scipy
 import numpy as np
 import os
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.models import load_model
-
+from keras.models import Sequential
+from keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D
+from keras.preprocessing.image import ImageDataGenerator
+from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.preprocessing import image
+from keras.models import load_model
 
 # Configure the GPU memory growth
 gpus = tf.config.experimental.list_physical_devices('GPU')
